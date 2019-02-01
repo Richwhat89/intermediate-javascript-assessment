@@ -113,9 +113,9 @@ var mustang = new Vehicle()
 
 
 
-string.grammarPolice(){
+// string.grammarPolice(){
 
-}
+// }
 
 
 
@@ -157,6 +157,6 @@ function valueType(a , b){
 
 var theAnswer = "Unknown";
 
-promiseCatcher=(theAnswer)=>{
-  return theAnswer;
-}
+promiseCatcher()
+  .then(()=>{theAnswer})
+
