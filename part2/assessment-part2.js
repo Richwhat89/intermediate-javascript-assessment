@@ -43,8 +43,8 @@ function noWeakLink() {
     method: 'GET',
     url: '/api/users'
   })
-  // CODE HERE...
-
+  // .then(firstUser=>{response.data[0]})
+  // .then(thirdUser=>{response.data[2]})
 }
 
 
@@ -73,8 +73,8 @@ function large() {
 
   return 'My name is ' + this.name + ' and I am very heavy!'
 }
-// CODE HERE...
 
+var boundToElephant = elephant.large()
 
 
 // *************
@@ -87,7 +87,12 @@ function large() {
 // Use explicit binding to give capacity the context of crew
 // and return the bound function.
 
-// CODE HERE...
+deathStar=(capacity, crew)=>{
+  this.capacity=capacity;
+  this.crew=crew;
+}
+
+// return this.capacity + this.crew;
 
 
 
@@ -102,8 +107,14 @@ function large() {
 // The closure function will take in a parameter: liabilities (Number)
 // The closure function will return the combined value of assets and liabilities.
 
-// CODE HERE...
-
+accounting=(assets)=>{
+  var assets = num;
+  function closure(liabilities){
+    alert(assets);
+  }
+  closure();
+}
+accounting();
 
 
 // *************
@@ -127,7 +138,12 @@ function large() {
 //     remember: << array of items to be remembered >>
 // };
 
-// CODE HERE...
+function forgetter(){
+  function rememberall(){
+  }
+   return rememberall();
+}
+forgetter();
 
 
 
@@ -155,4 +171,12 @@ function large() {
 
 // NOTE: Neither hunger nor danger should be able to exceed 100 or drop below 0.
 
-// CODE HERE...
+frodo=(startingHungerValue, startingDangerValue)=>{
+  // this.dinnerOverFire(){
+  //   (startingHungerValue -25 && startingDangerValue + 40)
+  //  }
+  //  this.hidingInBush(){
+  //   (startingHungerValue + 35 && startingDangerValue -20)
+  //  }
+
+}
